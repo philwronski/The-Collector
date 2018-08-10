@@ -1,6 +1,7 @@
 package fr.philwronski.thecollector.application
 
-import fr.philwronski.thecollector.domain.CollectionType
+import fr.philwronski.thecollector.domain.Serie
+import fr.philwronski.thecollector.domain.collectible.Book
 import org.springframework.web.bind.annotation.GetMapping
 import org.springframework.web.bind.annotation.RestController
 
@@ -8,5 +9,5 @@ import org.springframework.web.bind.annotation.RestController
 class CollectionController {
 
     @GetMapping()
-    fun getAllCollectionType() = CollectionType.values()
+    fun getAllCollectionType() = Serie<Book>("", listOf())//CollectionType.values()
 }
