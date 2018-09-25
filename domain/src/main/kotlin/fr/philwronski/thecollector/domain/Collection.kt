@@ -2,7 +2,8 @@ package fr.philwronski.thecollector.domain
 
 import fr.philwronski.thecollector.domain.collectible.Collectible
 
-data class Collection(
-        val title: String,
-        val collectibles: List<Collectible>
-)
+class Collection(val title: String, val items: MutableList<Collectible>) : GenericCollection<Collectible> {
+    override fun addItem(item: Collectible) {
+        this.items.add(item)
+    }
+}
