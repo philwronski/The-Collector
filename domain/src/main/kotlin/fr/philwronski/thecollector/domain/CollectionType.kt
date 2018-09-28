@@ -1,8 +1,8 @@
 package fr.philwronski.thecollector.domain
 
-import fr.philwronski.thecollector.domain.collectible.Book
-import fr.philwronski.thecollector.domain.collectible.Collectible
-import fr.philwronski.thecollector.domain.collectible.Figurine
+import fr.philwronski.thecollector.domain.collectibles.books.Book
+import fr.philwronski.thecollector.domain.collectibles.Collectible
+import fr.philwronski.thecollector.domain.collectibles.figurines.Figurine
 import kotlin.reflect.KClass
 
 enum class CollectionType(val clazz: KClass<out Collectible>) {

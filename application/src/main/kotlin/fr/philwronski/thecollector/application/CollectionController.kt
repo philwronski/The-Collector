@@ -4,10 +4,7 @@ import fr.philwronski.thecollector.application.collectible.CollectionRequest
 import fr.philwronski.thecollector.domain.Collection
 import fr.philwronski.thecollector.domain.CollectionType
 import fr.philwronski.thecollector.domain.Serie
-import fr.philwronski.thecollector.domain.collectible.Book
-import io.swagger.annotations.ApiOperation
-import io.swagger.annotations.ApiResponse
-import io.swagger.annotations.ApiResponses
+import fr.philwronski.thecollector.domain.collectibles.books.Book
 import org.springframework.web.bind.annotation.*
 
 @RestController
